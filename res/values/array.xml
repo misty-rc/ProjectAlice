@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="buttons">
+        <item>@+id/digit1</item>
+        <item>@+id/digit2</item>
+        <item>@+id/digit3</item>
+        <item>@+id/digit4</item>
+        <item>@+id/digit5</item>
+        <item>@+id/digit6</item>
+        <item>@+id/digit7</item>
+        <item>@+id/digit8</item>
+        <item>@+id/digit9</item>
+        <item>@+id/zero</item>
+        <item>@+id/doublezero</item>
+        <item>@+id/comma</item>
+        <item>@+id/plus</item>
+        <item>@+id/minus</item>
+        <item>@+id/divide</item>
+        <item>@+id/times</item>
+        <item>@+id/equal</item>
+        <item>@+id/clear</item>
+        <item>@+id/income</item>
+        <item>@+id/expenses</item>
+    </string-array>
+    
+</resources>

@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="true"
+    android:weightSum="100"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        android:baselineAligned="true"
+        android:orientation="horizontal"
+        android:weightSum="100" >
+        
+<!--        <TextView 
+            android:id="@+id/input_display"
+            style="@style/calcdisp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="80"
+            android:gravity="right|center"
+            android:padding="10dp"
+            android:text="1234567890"/>
+-->    
+
+		<org.misty.rc.projectalice.view.ExtendedEditText
+		    android:id="@+id/display"
+		    style="@style/calcdisp"
+		    android:layout_width="0dp"
+		    android:layout_height="match_parent"
+		    android:layout_weight="80"
+		    android:gravity="right|center"
+		    android:padding="10dp"/>
+		    
+        
+        <org.misty.rc.projectalice.view.NumpadButton
+            android:id="@+id/clear"
+            style="@style/clear_style"
+            android:text="@string/clear"/>
+        
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:baselineAligned="true"
+        android:orientation="horizontal">
+        
+        <Spinner 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/category"/>
+        
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="60"
+        android:baselineAligned="true"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <org.misty.rc.projectalice.view.NumpadButton
+                android:id="@+id/digit7"
+                style="@style/button_style"
+                android:text="@string/seven" />
+
+            <org.misty.rc.projectalice.view.NumpadButton
+                android:id="@+id/digit4"
+                style="@style/button_style"
+                android:text="@string/four" />
+
+            <org.misty.rc.projectalice.view.NumpadButton
+                android:id="@+id/digit1"
+                style="@style/button_style"
+                android:text="@string/one" />
+
+            <org.misty.rc.projectalice.view.NumpadButton
+                android:id="@+id/doublezero"
+                style="@style/button_style"
+                android:text="@string/doublezero" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <org.misty.rc.projectalice.view.NumpadButton
+                android:id="@+id/digit8"
+                style="@style/button_style"
+                android:text="@string/eight" />
+
+            <org.misty.rc.projectalice.view.NumpadButton
+                android:id="@+id/digit5"
+                style="@style/button_style"
+                android:text="@string/five" />
+
+            <org.misty.rc.projectalice.view.NumpadButton
+                android:id="@+id/digit2"
+                style="@style/button_style"
+                android:text="@string/two" />
+
+            <org.misty.rc.projectalice.view.NumpadButton
+                android:id="@+id/zero"
+                style="@style/button_style"
+                android:text="@string/zero" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <org.misty.rc.projectalice.view.NumpadButton
+                android:id="@+id/digit9"
+                style="@style/button_style"
+                android:text="@string/nine" />
+
+            <org.misty.rc.projectalice.view.NumpadButton
+                android:id="@+id/digit6"
+                style="@style/button_style"
+                android:text="@string/six" />
+
+            <org.misty.rc.projectalice.view.NumpadButton
+                android:id="@+id/digit3"
+                style="@style/button_style"
+                android:text="@string/three" />
+
+            <org.misty.rc.projectalice.view.NumpadButton
+                android:id="@+id/comma"
+                style="@style/button_style"
+                android:text="@string/comma" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <org.misty.rc.projectalice.view.NumpadButton
+                android:id="@+id/divide"
+                style="@style/button_style"
+                android:text="@string/divide" />
+
+            <org.misty.rc.projectalice.view.NumpadButton
+                android:id="@+id/times"
+                style="@style/button_style"
+                android:text="@string/times" />
+
+            <org.misty.rc.projectalice.view.NumpadButton
+                android:id="@+id/minus"
+                style="@style/button_style"
+                android:text="@string/minus" />
+
+            <org.misty.rc.projectalice.view.NumpadButton
+                android:id="@+id/plus"
+                style="@style/button_style"
+                android:text="@string/plus" />
+
+            <org.misty.rc.projectalice.view.NumpadButton
+                android:id="@+id/equal"
+                style="@style/button_style"
+                android:text="@string/equal" />
+        </LinearLayout>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:baselineAligned="true"
+        android:orientation="horizontal" >
+        
+        <org.misty.rc.projectalice.view.NumpadButton
+            android:id="@+id/income"
+            style="@style/commit_style"
+            android:text="@string/income"/>
+        
+        <org.misty.rc.projectalice.view.NumpadButton
+            android:id="@+id/expenses"
+            style="@style/commit_style"
+            android:text="@string/expenses"/>
+        
+    </LinearLayout>
+
+</LinearLayout>
