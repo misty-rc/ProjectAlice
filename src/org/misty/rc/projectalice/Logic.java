@@ -1,16 +1,13 @@
 package org.misty.rc.projectalice;
 
-import org.misty.rc.projectalice.view.ExtendedEditText;
-
-import de.congrace.exp4j.Calculable;
-import de.congrace.exp4j.ExpressionBuilder;
-
 import android.content.Context;
-import android.support.v4.app.Fragment;
+import android.database.sqlite.SQLiteDatabase;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
-import android.widget.TextView;
+import de.congrace.exp4j.Calculable;
+import de.congrace.exp4j.ExpressionBuilder;
+import org.misty.rc.projectalice.view.ExtendedEditText;
 
 public class Logic {
 	private Context _context;
@@ -18,9 +15,11 @@ public class Logic {
 	private ExtendedEditText _exview;
 	private Calculable _calc;
 	private View _view;
+    private BudgetManager _budget;
 	
 	public Logic(Context context) {
 		_context = context;
+        _budget = new BudgetManager(this._context);
 	}
 	
 	public void setDisplay(ExtendedEditText view) {
